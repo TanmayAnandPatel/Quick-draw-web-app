@@ -23,3 +23,33 @@ function setup() {
 function update_canvas() {
     background("white");
 }
+function draw() {
+check_sketch();
+if(drawn_sketch==sketch){
+answer_holder="set";
+score++;
+document.getElementById("score").innerHTML="score: "+score;
+}
+}
+function check_sketch() {
+timer_counter++
+span2=timer_counter;
+console.log(span2);
+if(timer_counter>400){
+    timer_counter=0;
+    timer_check=completed;
+}
+if(timer_check==completed || answer_holder==set){
+    timer_check="";
+    answer_holder="";
+    update_canvas();
+}
+}
+function update_canvas() {
+ background("white");
+ random_no=Math.floor((Math.random()*quick_draw_data_set.length)+1)
+ console.log(quick_draw_data_set[random_no])
+ sketch=quick_draw_data_set[random_no]
+ document.getElementById("sketch_name").innerHTML="Sketch to be drawn is: "+sketch;
+
+}

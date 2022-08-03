@@ -1,5 +1,5 @@
 body {
-background-color: rgba(64, 64, 228, 0.733);
+background-color: greenyellow;
 }
 
 #span1,#span2{
@@ -9,9 +9,9 @@ float: left;
 
 }
 #span2{
-    margin-left: -60px;
+    margin-left: -80px;
     margin-top: 10px;
-    float: right;
+ 
 }
 
 #p3{
