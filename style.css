@@ -1,0 +1,24 @@
+body {
+background-color: rgba(64, 64, 228, 0.733);
+}
+
+#span1,#span2{
+font-size: 25px;
+font-weight: bold;
+float: left;
+
+}
+#span2{
+    margin-left: -60px;
+    margin-top: 10px;
+    float: right;
+}
+
+#p3{
+    color: red;
+    font-size: 25px;
+}
+
+#show_sketch{
+    float: right;
+}
